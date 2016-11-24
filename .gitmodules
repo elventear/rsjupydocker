@@ -1,0 +1,6 @@
+[submodule "rsjupyter"]
+	path = rsjupyter
+	url = https://github.com/radiasoft/rsjupyter.git
+[submodule "comsoljupyter"]
+	path = comsoljupyter
+	url = https://github.com/radiasoft/comsoljupyter.git
