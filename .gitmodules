@@ -7,3 +7,6 @@
 [submodule "pykern"]
 	path = pykern
 	url = https://github.com/elventear/pykern.git
+[submodule "jupyterhub"]
+	path = jupyterhub
+	url = https://github.com/elventear/jupyterhub.git
