@@ -4,3 +4,6 @@
 [submodule "comsoljupyter"]
 	path = comsoljupyter
 	url = https://github.com/radiasoft/comsoljupyter.git
+[submodule "pykern"]
+	path = pykern
+	url = https://github.com/elventear/pykern.git
