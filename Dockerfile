@@ -22,6 +22,10 @@ RUN cd rsjupyter && python setup.py install && \
 
 RUN rm -rf  /src ~/.cache ~/.npm
 
-ADD resolv.conf.head /etc/resolv.conf
+ADD jupyterlab/jupyterlab/__init__.py /src/jpl__init__.py
+RUN mv /src/jpl__init__.py /opt/conda/lib/python3.5/site-packages/jupyterlab/__init__.py
+
 ADD jupyterhub_config.py /srv/jupyterhub/
 WORKDIR /srv/jupyterhub/
+
+CMD echo "nameserver 8.8.8.8\nnameserver 8.8.4.4" > /etc/resolv.conf && jupyterhub
